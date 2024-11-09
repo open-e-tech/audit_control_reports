@@ -68,8 +68,6 @@ def get_conditions(filters):
 	
 def get_audit_trail_data(filters):
 	conditions = get_conditions(filters)
-	print("conditions")
-	print(conditions)
 	data = frappe.db.sql('''select ref_doctype,
 								docname,
 								data as "audit_trail_detail",
