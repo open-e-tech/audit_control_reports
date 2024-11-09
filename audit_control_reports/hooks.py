@@ -144,7 +144,24 @@ app_license = "mit"
 # 		"on_trash": "method"
 # 	}
 # }
-
+doc_events = {
+	"Sales Invoice": 
+		{
+		"on_submit": "audit_control_reports.audit_control_reports.doctype.maker_checker_settings.maker_checker_settings.validate_maker_checker"
+		},
+	"Purchase Invoice": 
+		{
+		"on_submit": "audit_control_reports.audit_control_reports.doctype.maker_checker_settings.maker_checker_settings.validate_maker_checker"
+		},
+	"Payment Entry": 
+		{
+		"on_submit": "audit_control_reports.audit_control_reports.doctype.maker_checker_settings.maker_checker_settings.validate_maker_checker"
+		},
+	"Journal Entry": 
+		{
+		"on_submit": "audit_control_reports.audit_control_reports.doctype.maker_checker_settings.maker_checker_settings.validate_maker_checker"
+		}
+}
 # Scheduled Tasks
 # ---------------
 

@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-08 13:29:46.053044",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_maker_checker_section",
+  "sales_invoice",
+  "purchase_invoice",
+  "payment_entry",
+  "journal_entry"
+ ],
+ "fields": [
+  {
+   "fieldname": "enable_maker_checker_section",
+   "fieldtype": "Section Break",
+   "label": "Enable Maker Checker"
+  },
+  {
+   "default": "0",
+   "fieldname": "sales_invoice",
+   "fieldtype": "Check",
+   "label": "Sales Invoice"
+  },
+  {
+   "default": "0",
+   "fieldname": "purchase_invoice",
+   "fieldtype": "Check",
+   "label": "Purchase Invoice"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_entry",
+   "fieldtype": "Check",
+   "label": "Payment Entry"
+  },
+  {
+   "default": "0",
+   "fieldname": "journal_entry",
+   "fieldtype": "Check",
+   "label": "Journal Entry"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-08 13:40:05.090597",
+ "modified_by": "Administrator",
+ "module": "Audit Control Reports",
+ "name": "Maker Checker Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
